@@ -10,7 +10,7 @@ PROMPT=$'%{$fg_bold[black]%}┌%{$reset_color%}%{$fg[cyan]%}[%{$fg_bold[white]%}
 %{$fg_bold[black]%}└%{$reset_color%}%{$fg[cyan]%}[%{$fg_bold[white]%}${PWD/#$HOME/~}%{$reset_color%}%{$fg[cyan]%}]%{$fg_bold[black]%}>%{$reset_color%} '
 PS2=$' %{$fg[cyan]%}|%{$fg_bold[black]%}>%{$reset_color%} '
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[black]%}-%{$reset_color%}%{$fg[cyan]%}[%{$fg_bold[white]%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[black]%}-%{$reset_color%}%{$fg[cyan]%}[%{$fg_bold[white]%}branch%{$fg_bold[black]%}:%{$fg_bold[white]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}%{$fg[cyan]%}]"
 ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[cyan]%}*%{$reset_color%}"
 
