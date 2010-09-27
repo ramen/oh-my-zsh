@@ -7,7 +7,7 @@ function virtualenv_prompt_info {
 }
 
 PROMPT=$'%{$fg_bold[black]%}┌%{$reset_color%}%{$fg[cyan]%}[%{$fg_bold[white]%}%n%{$reset_color%}%{$fg_bold[black]%}@%{$fg_bold[white]%}%m%{$reset_color%}%{$fg[cyan]%}]%{$fg_bold[black]%}-%{$reset_color%}%{$fg[cyan]%}[%{$fg_bold[white]%}%!%{$fg_bold[black]%}/%{$fg_bold[white]%}%y%{$reset_color%}%{$fg[cyan]%}]%{$fg_bold[black]%}-%{$reset_color%}%{$fg[cyan]%}[%{$fg_bold[white]%}%D{%I:%M%P}%{$fg_bold[black]%}:%{$fg_bold[white]%}%D{%m/%d/%y}%{$reset_color%}%{$fg[cyan]%}]%{$(git_prompt_info)%}%{$(virtualenv_prompt_info)%}
-%{$fg_bold[black]%}└%{$reset_color%}%{$fg[cyan]%}[%{$fg_bold[white]%}${PWD/#$HOME/~}%{$reset_color%}%{$fg[cyan]%}]%{$fg_bold[black]%}>%{$reset_color%} '
+%{$fg_bold[black]%}└%{$reset_color%}%{$fg[cyan]%}[%{$fg_bold[white]%}%#%{$fg_bold[black]%}:%{$fg_bold[white]%}${PWD/#$HOME/~}%{$reset_color%}%{$fg[cyan]%}]%{$fg_bold[black]%}>%{$reset_color%} '
 PS2=$' %{$fg[cyan]%}|%{$fg_bold[black]%}>%{$reset_color%} '
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[black]%}-%{$reset_color%}%{$fg[cyan]%}[%{$fg_bold[white]%}branch%{$fg_bold[black]%}:%{$fg_bold[white]%}"
