@@ -1,6 +1,11 @@
-# environment.zsh - Environment variables
+# environment.zsh - Environment variables and options
 
-umask 002
-
+# Environment variables
 export EDITOR='emacs -nw'
 export LYNX_CFG=~/.lynxrc
+
+# Match hidden files with wildcards
+setopt globdots
+
+# Make new files group-writable
+umask 002
