@@ -1,6 +1,6 @@
 case "$TERM" in
   dumb)
-    export PROMPT='%m:%~%# '
+    export PROMPT='%m:${PWD/#$HOME/~}%# '
     unsetopt zle
     ;;
 esac
