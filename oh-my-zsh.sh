@@ -16,11 +16,3 @@ for plugin ($plugins) source $ZSH/plugins/$plugin/$plugin.plugin.zsh
 
 # Load the theme
 source "$ZSH/themes/$ZSH_THEME.zsh-theme"
-
-# Check for updates on initial load...
-if [ "$DISABLE_AUTO_UPDATE" = "true" ]
-then
-  return
-else
-  /usr/bin/env zsh $ZSH/tools/check_for_upgrade.sh
-fi
