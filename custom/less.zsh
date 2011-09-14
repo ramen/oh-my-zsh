@@ -1,6 +1,6 @@
 # less.zsh - less customizations
 
-export LESS=-cex4M
+export LESS=-cex4MR
 
 if [ -x /usr/bin/lesspipe ]; then
     eval "$(lesspipe)"
